@@ -3,7 +3,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void sortDescending(int,int,int);
+void sortDescending(int&,int&,int&);
 void swap(int&,int&);
 
 int main()
@@ -19,7 +19,8 @@ int main()
   return 0;
 }
 
-void sortDescending(int first, int second, int third)
+//Sorts a trio of integers in decending order. Calls the swap function to swap integer positions
+void sortDescending(int &first, int &second, int &third)
 {
   if( first < third )
   {
@@ -35,6 +36,7 @@ void sortDescending(int first, int second, int third)
   }
 }
 
+//Swaps two integers
 void swap(int &first, int &second)
 {
   int temp = first;
